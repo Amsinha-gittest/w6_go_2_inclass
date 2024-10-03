@@ -50,7 +50,5 @@ func main() {
 	http.HandleFunc("/get", getHandler)
 	http.HandleFunc("/post", postHandler)
 	fmt.Println("Server running on port: 4455")
-
 	log.Fatal(http.ListenAndServe(":4455", nil))
-
 }
